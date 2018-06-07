@@ -43,11 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContentSaver.cs" />
+    <Compile Include="CrossDomainRestrictionType.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restrictions\CrossDomainRestriction.cs" />
+    <Compile Include="Restrictions\FileTypesRestriction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiteDownloader\SiteDownloader.csproj">
+      <Project>{68e379ee-e29a-4a60-a554-bbf1cbd4fb88}</Project>
+      <Name>SiteDownloader</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
